@@ -1,5 +1,5 @@
 // Importing the Schema and model from mongoose
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types} = require('mongoose');
 
 // A schema for the Thought model's reactions field
 const reactionSchema = new Schema(
@@ -20,15 +20,8 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: (createdAtVal) => dateFormat(createdAtVal).format('MM/DD/YYYY'),
+            get: (createdAtVal) => dateFormat(createdAtVal),
         }
-    },
-    {
-        toJSON: {
-            virtuals: true,
-            getters: true
-        },
-        id: false
     }
 );
 
@@ -55,7 +48,6 @@ const thoughtSchema = new Schema(
     {
         toJSON: {
             virtuals: true,
-            getters: true
         },
         id: false
     }
@@ -67,7 +59,7 @@ thoughtSchema.virtual('reactionCount').get(function(){
 });
 
 // Create the Thought model using the thoughtSchema
-const Thought = model('thought', thoughtSchema);
+const Thought = model('Thought', thoughtSchema);
 
 // Export the Thought model
 module.exports = Thought;
