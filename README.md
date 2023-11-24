@@ -6,9 +6,12 @@
 
 Making a backend social network API with mongoDB, mongoose, and express. 
 
+Video Link: [https://drive.google.com/file/d/1m8p9Qywh_uO_dzfE2xScmdOci0vlO-Na/view](https://drive.google.com/file/d/1m8p9Qywh_uO_dzfE2xScmdOci0vlO-Na/view) Part 1 <br/>
+[https://drive.google.com/file/d/1U3zhjf3QWoS6Dh_DMbmEu65I2jzQI0bv/view](https://drive.google.com/file/d/1U3zhjf3QWoS6Dh_DMbmEu65I2jzQI0bv/view) (removing reactions) Part 2
+
 ## Installation 
 
-To start this application, clone and open this repository in your Visual Studio code and have Insomnia and MongoDB Compass installed and opened. With Insomnia opened, have four folders named Users, Thoughts, Friends, and Reactions. For Users and Thoughts create HTTP requests of GET one, GET all, POST, PUT, and DELETE. For Friends and Reactions, create HTTP requests of POST and DELETE. Then, have MongoDB connected to your localhost(default). Finally, within the terminal of your Visual Studio Code enter 'node server' to run the server.
+To start this application, clone and open this repository in your Visual Studio code and have Insomnia and MongoDB Compass installed and opened. With Insomnia opened, have four folders named Users, Thoughts, Friends, and Reactions. For Users and Thoughts create HTTP requests of GET one, GET all, POST, PUT, and DELETE. For Friends and Reactions, create HTTP requests of POST and DELETE. Then, have MongoDB connected to your localhost(default). Finally, within the terminal of your Visual Studio Code enter 'node server' or 'npm run watch' to run the server.
 
 
 ## Sample NoSQL Code

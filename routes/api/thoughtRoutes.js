@@ -83,7 +83,7 @@ router.delete('/:id', async (req, res) => {
             { $pull: { thoughts: req.params._id } },
             { new: true }
         );
-        return res.status(200).json(deleteThought, { message: 'Thought deleted' });
+        return res.status(200).json({ message: 'Thought deleted' });
     } catch (err) {
         console.log(err);
         return res.status(400).json(err);
